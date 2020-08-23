@@ -33,9 +33,9 @@ public class TeleOpTest extends LinearOpMode {
         while (opModeIsActive()) {
             // Put loop blocks here.
             tgtPowerLeft = -gamepad1.left_stick_y;
-            tgtPowerLeft1 = -gamepad2.left_stick_y;
+            tgtPowerLeft1 = -gamepad1.left_stick_y;
             tgtPowerRight = -gamepad1.right_stick_y;
-            tgtPowerRight1 = -gamepad2.right_stick_y;
+            tgtPowerRight1 = -gamepad1.right_stick_y;
             motor1.setPower(tgtPowerLeft);
             motor3.setPower(tgtPowerLeft1);
             motor2.setPower(tgtPowerRight);
